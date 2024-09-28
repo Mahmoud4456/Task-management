@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-import 'features/register_feature/login_view.dart';
+import 'features/register_feature/view/auth_view.dart';
 void main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,11 +27,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: const ColorScheme.light(),
-        useMaterial3: true,
       ),
       // theme: ThemeData.light(),
       // darkTheme: ThemeData.dark(),
-      home: const LoginView(),
+      home: const AuthView(),
     );
   }
 }
