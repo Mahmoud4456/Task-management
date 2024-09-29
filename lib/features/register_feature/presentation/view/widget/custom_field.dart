@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-
-import '../../../../core/utils/colors.dart';
+import '../../../../../core/utils/colors.dart';
 
 class CustomField extends StatelessWidget {
   const CustomField({
-    super.key, required this.icon, required this.hint,
+    super.key, required this.icon, required this.label,
   });
   final IconData icon ;
-  final String hint ;
+  final String label ;
 
   @override
   Widget build(BuildContext context) {
@@ -21,8 +20,8 @@ class CustomField extends StatelessWidget {
             cursorColor: primaryColor,
             cursorHeight: 20 ,
             decoration: InputDecoration(
-              hintStyle: const TextStyle(color: Colors.grey ),
-              hintText: hint,
+              labelStyle: const TextStyle(color: Colors.grey  , fontSize: 14),
+              labelText: label,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
               ),

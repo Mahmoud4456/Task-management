@@ -1,52 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:task_manager/features/register_feature/view/register_view.dart';
-
-import '../../../core/utils/colors.dart';
-
-// class LoginView extends StatelessWidget {
-//   const LoginView({super.key});
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return  DefaultTabController(
-//       length: 2,
-//       child:  Scaffold(
-//         backgroundColor: Colors.white.withOpacity(.75),
-//         appBar: AppBar(
-//           backgroundColor: Colors.white,
-//           elevation: 1,
-//           title: const Text("Task Manager" , style: TextStyle( fontSize: 32 , fontWeight: FontWeight.bold , color: Colors.blue),),
-//           bottom: TabBar(
-//             indicatorSize: TabBarIndicatorSize.tab,
-//             unselectedLabelColor: Colors.grey,
-//             labelColor: Colors.black,
-//             padding: const EdgeInsets.all(10),
-//             dividerHeight: 0,
-//             indicator: BoxDecoration(
-//               color: Colors.white,
-//               borderRadius: BorderRadius.circular(14),
-//             ),
-//
-//             tabs: const [
-//               Tab(text: "Login",),
-//               Tab(text: "Register",),
-//             ],
-//           ),
-//         ),
-//         body: Container(
-//           padding: EdgeInsets.symmetric(horizontal:30 ,vertical: 100),
-//           alignment: Alignment.center,
-//           child: const TabBarView(
-//               children: [
-//             LoginViewBody(),
-//             RegisterView(),
-//           ]
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
+import 'package:task_manager/features/register_feature/presentation/view/register_view.dart';
+import '../../../../core/utils/colors.dart';
+import 'login_view.dart';
 
 class AuthView extends StatefulWidget {
   const AuthView({super.key});
@@ -103,7 +58,7 @@ class _AuthViewState extends State<AuthView> {
              ],
            ),
            const SizedBox(height: 12,),
-           isSelected == true ? const LoginViewBody() : const RegisterView(),
+           isSelected == true ? const LoginView() : const RegisterView(),
          ] ,
         ),
       ) ,
@@ -113,20 +68,3 @@ class _AuthViewState extends State<AuthView> {
 
 
 
-class LoginViewBody extends StatelessWidget {
-  const LoginViewBody({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      child: Container(
-        decoration: BoxDecoration(
-          color: Colors.greenAccent,
-          borderRadius: BorderRadius.circular(12),
-        ),
-        height:350 ,
-        width:double.infinity ,
-      ),
-    );
-  }
-}
