@@ -6,12 +6,16 @@ import 'package:task_manager/features/home_feature/presentation/view/widget/home
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
-
+ // final List <Widget> screens = [
+ //   HomeViewBody(),
+ //   TeamsView(),
+ //   DetailsView()
+ // ];
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: PreferredSize(preferredSize: Size(double.infinity, 60), child: HomeAppBar()),
-      body:  HomeViewBody(),
+      body: HomeViewBody(),
       floatingActionButton: CustomFloatingActionButton(),
       bottomNavigationBar: CustomBottomNavigationBar(),
     );

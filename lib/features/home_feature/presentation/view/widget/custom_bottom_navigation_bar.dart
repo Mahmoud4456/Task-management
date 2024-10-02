@@ -40,6 +40,5 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
         ),
       ],
     ) ;
-
   }
 }

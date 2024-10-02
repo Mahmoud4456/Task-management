@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:task_manager/features/teams_feature/presentation/view/teams_view.dart';
 import 'features/home_feature/presentation/view/home_view.dart';
 import 'features/register_feature/presentation/view/auth_view.dart';
 
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
       ),
       // theme: ThemeData.light(),
       // darkTheme: ThemeData.dark(),
-      home: const HomeView(),
+      home: const TeamsView(),
     );
   }
 }

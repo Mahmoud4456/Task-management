@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
-const primaryColor = Colors.blue ;
-const primaryTextColor = Colors.black ;
+const Color primaryColor = Colors.blue ;
+const Color primaryTextColor = Colors.black ;
 const Color iconColor =   Colors.white ;
+const Color grey = Colors.grey ;
